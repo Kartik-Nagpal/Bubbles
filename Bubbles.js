@@ -112,6 +112,23 @@ function Point(x, y, z, size, color)
     	    ctx.lineTo((this.curPos.x + dx) + 15, (this.curPos.y + dy) - 15);
     	    ctx.fill();
 	} 
+	else if (bubbleShape == "hexagon")
+	{
+	    ctx.beginPath();
+	    var x = this.curPos.x + dx;
+	    var y = this.curPos.y + dy;
+	    var u = 4;
+	    ctx.moveTo(x, y);
+    	ctx.lineTo((x + 2*u), y);
+    	ctx.lineTo(x + 3*u, y + u);
+	    ctx.lineTo(x + 3*u, y + 3*u);
+	    ctx.lineTo(x + 2*u, y + 4*u);
+	    ctx.lineTo(x, y + 4*u);
+	    ctx.lineTo(x - u, y + 3*u);
+	    ctx.lineTo(x - u, y + u);
+	    ctx.lineTo(x, y);
+    	ctx.fill();
+	}
 	else 
 	{
             ctx.beginPath();
