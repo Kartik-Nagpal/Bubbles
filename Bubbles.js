@@ -119,15 +119,36 @@ function Point(x, y, z, size, color)
 	    var y = this.curPos.y + dy;
 	    var u = 4;
 	    ctx.moveTo(x, y);
-    	ctx.lineTo((x + 2*u), y);
-    	ctx.lineTo(x + 3*u, y + u);
+	    ctx.lineTo(x + 2*u, y);
+    	    ctx.lineTo(x + 3*u, y + u);
 	    ctx.lineTo(x + 3*u, y + 3*u);
 	    ctx.lineTo(x + 2*u, y + 4*u);
 	    ctx.lineTo(x, y + 4*u);
 	    ctx.lineTo(x - u, y + 3*u);
 	    ctx.lineTo(x - u, y + u);
 	    ctx.lineTo(x, y);
-    	ctx.fill();
+    	    ctx.fill();
+	}
+	else if (bubbleShape == "cross")
+	{
+	    ctx.beginPath();
+	    var a = this.curPos.x + dx;
+	    var b = this.curPos.y + dy;
+	    var u = 5;
+	    ctx.moveTo(a, b);
+	    ctx.lineTo(a, b-2*u);
+	    ctx.lineTo(a+u, b-2*u);
+	    ctx.lineTo(a+u, b);
+	    ctx.lineTo(a+3*u, b);
+	    ctx.lineTo(a+3*u, b+u);
+	    ctx.lineTo(a+u, b+u);
+	    ctx.lineTo(a+u, b+3*u);
+	    ctx.lineTo(a, b+3*u);
+	    ctx.lineTo(a, b+u);
+	    ctx.lineTo(a-2*u, b+u);
+	    ctx.lineTo(a-2*u, b);
+	    ctx.lineTo(a, b);
+	    ctx.fill();
 	}
 	else 
 	{
