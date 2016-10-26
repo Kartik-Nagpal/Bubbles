@@ -13,7 +13,7 @@ function choose()
 }
 
 
-var myName = ["Created By", "LightningLord Productions"];
+var myName = ["Congratulations!", "LightningLord Productions"];
 
 var yellow = [50, 100, 50];
 var black = [0, 0, 0];
