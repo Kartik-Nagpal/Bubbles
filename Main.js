@@ -1,8 +1,8 @@
-function choose() 
+function choose()
 {
     var input = prompt("Please Choose a Type(enter the number):\n1. Circle\n2. Square\n3. Triangle\n4. Hexagon\n5. Cross", "1");
-    
-    if (input != null && parseInt(input) > 0 && parseInt(input) <= 5) 
+
+    if (input != null && parseInt(input) > 0 && parseInt(input) <= 5)
 	{
         return parseInt(input) - 1;
 	}
@@ -13,7 +13,7 @@ function choose()
 }
 
 
-var myName = ["Congratulations!", "LightningLord Productions"];
+var myName = ["Hello There!", "LightningLord Productions"];
 
 var yellow = [50, 100, 50];
 var black = [0, 0, 0];
