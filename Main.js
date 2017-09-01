@@ -1,10 +1,17 @@
 function choose()
 {
-    var input = prompt("Please Choose a Type(enter the number):\n1. Circle\n2. Square\n3. Triangle\n4. Hexagon\n5. Cross", "1");
+  var URL = (window.location.href).split("#");
+  var num = parseInt(URL[URL.length]);
 
-    if (input != null && parseInt(input) > 0 && parseInt(input) <= 5)
+  if(num != null && num > 0 && num <= 5)
+  {
+    return num;
+  }
+  var input = parseInt(prompt("Please Choose a Type(enter the number):\n1. Circle\n2. Square\n3. Triangle\n4. Hexagon\n5. Cross", "1"));
+
+  if(input != null && input > 0 && input <= 5)
 	{
-        return parseInt(input) - 1;
+    return input - 1;
 	}
 	else
 	{
