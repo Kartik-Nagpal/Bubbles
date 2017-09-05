@@ -3,14 +3,12 @@ var message = "Hello There!";
 function choose()
 {
   var URL = (window.location.href).split("#");
-  console.log(URL);
   var info = (URL[URL.length - 1]).split("!");
-  console.log(info);
   var num = parseInt(info[0]);
-  if(info[info.length - 1] != null && info[info.length - 1] != num)
+  var m = info[info.length - 1];
+  if(m != null && m != "https://kartik-nagpal.github.io/Bubbles/" && m != num)
   {
-     message = info[info.length - 1];
-     console.log(message);
+     message = m;
   }
 
   if(num != null && num > 0 && num <= 5)
