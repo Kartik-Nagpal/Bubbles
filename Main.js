@@ -1,7 +1,14 @@
+var message = "Hello There!";
+
 function choose()
 {
   var URL = (window.location.href).split("#");
-  var num = parseInt(URL[URL.length]);
+  var info = (URL[URL.length]).split("!");
+  var num = parseInt(info[0]);
+  if(info[info.length] != null && info[info.length] != num)
+  {
+     message = info[info.length];
+  }
 
   if(num != null && num > 0 && num <= 5)
   {
@@ -20,7 +27,7 @@ function choose()
 }
 
 
-var myName = ["Hello There!", "LightningLord Productions"];
+var myName = [message, "LightningLord Productions"];
 
 var yellow = [50, 100, 50];
 var black = [0, 0, 0];
