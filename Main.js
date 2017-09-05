@@ -15,7 +15,7 @@ function choose()
 
   if(num != null && num > 0 && num <= 5)
   {
-    return num;
+    return num - 1;
   }
   var input = parseInt(prompt("Please Choose a Type(enter the number):\n1. Circle\n2. Square\n3. Triangle\n4. Hexagon\n5. Cross", "1"));
 
