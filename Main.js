@@ -6,7 +6,7 @@ function choose()
   var info = (URL[URL.length - 1]).split("!");
   var num = parseInt(info[0]);
   var m = info[info.length - 1];
-  if(m != null && m != "https://kartik-nagpal.github.io/Bubbles/" && m != num)
+  if(m != null && m != "//kartik-nagpal.github.io/Bubbles/" && m != num)
   {
      message = m;
   }
